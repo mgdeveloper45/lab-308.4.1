@@ -59,4 +59,13 @@ dataStructure.pop();
 dataStructure.splice(1,0,{ id: "48", name: "Barry", occupation: "Runner", age: "25" }) 
 // console.log(dataStructure)
 dataStructure.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" })
-console.log(dataStructure)
+// console.log(dataStructure)
+let sum = 0;
+for(let person of dataStructure) {
+    if(person.age) {
+        sum += parseInt(person.age)
+    }
+}
+let averageAge = sum / dataStructure.length;
+console.log(averageAge)
+
