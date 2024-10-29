@@ -52,7 +52,7 @@ for(let k = 1; k < result.length; k++) {
 }
 console.log(dataStructure)
 
-// Part 4: Sorting and Manipulating Data
+// ======== Part 4: Sorting and Manipulating Data ==========
 
 dataStructure.pop();
 // console.log(dataStructure)
@@ -69,3 +69,9 @@ for(let person of dataStructure) {
 let averageAge = sum / dataStructure.length;
 console.log(averageAge)
 
+// ======= Part 5: Full Circle ========
+
+let csvResData = "";
+let headers = Object.keys(dataStructure[0]);
+csvResData += headers.join(",") + "\n"
+console.log(csvResData)
