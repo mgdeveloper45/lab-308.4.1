@@ -55,4 +55,6 @@ for(let k = 1; k < result.length; k++) {
 // Part 4: Sorting and Manipulating Data
 
 dataStructure.pop();
+// console.log(dataStructure)
+dataStructure.push({ id: "48", name: "Barry", occupation: "Runner", age: "25" })
 console.log(dataStructure)
