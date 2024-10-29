@@ -41,5 +41,14 @@ if(tempData) {
 
 let dataStructure = [];
 let headerRow = result[0].map(header => header.toLowerCase());
-console.log(headerRow);
+// console.log(headerRow);
+for(let k = 1; k < result.length; k++) {
+    let rowData = result[k];
+    let rowObj = {};
+     for(let l = 0; l < headerRow.length; l++) {
+        rowObj[headerRow[l]] = row[l];
+     }
+     dataStructure.push(rowObj);
+}
+console.log(dataStructure)
 
