@@ -6,7 +6,12 @@ let headerRow = row[0].split(',');
 // console.log(headerRow);
 for(let i = 1; i < row.length; i++) {
     let cell = row[i].split(',');
-    console.log(cell)
+    // console.log(cell)
+    let rowObj = {};
+    for(let j = 0; j < headerRow.length; j++) {
+        rowObj[headerRow[j]] = cell[j]
+    }
+    console.log(rowObj)
 }
 // let data = "";
 // let row = [];
