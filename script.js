@@ -76,6 +76,8 @@ let headers = Object.keys(dataStructure[0]);
 csvResData += headers.join(",") + "\n";
 // console.log(csvResData)
 for(let m = 0; m < dataStructure.length; m++) {
-    let row = headers.map(header => dataStructure[m][header])
-    console.log(row)
+    let row = headers.map(header => dataStructure[m][header]);
+    // console.log(row)
+    csvResData += row.join(",") + "\n";
 }
+console.log(csvResData)
