@@ -56,5 +56,5 @@ for(let k = 1; k < result.length; k++) {
 
 dataStructure.pop();
 // console.log(dataStructure)
-dataStructure.push({ id: "48", name: "Barry", occupation: "Runner", age: "25" })
+dataStructure[1] = { id: "48", name: "Barry", occupation: "Runner", age: "25" }
 console.log(dataStructure)
