@@ -50,5 +50,9 @@ for(let k = 1; k < result.length; k++) {
      }
      dataStructure.push(rowObj);
 }
-console.log(dataStructure)
+// console.log(dataStructure)
 
+// Part 4: Sorting and Manipulating Data
+
+dataStructure.pop();
+console.log(dataStructure)
