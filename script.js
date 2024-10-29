@@ -46,7 +46,7 @@ for(let k = 1; k < result.length; k++) {
     let rowData = result[k];
     let rowObj = {};
      for(let l = 0; l < headerRow.length; l++) {
-        rowObj[headerRow[l]] = row[l];
+        rowObj[headerRow[l]] = rowData[l];
      }
      dataStructure.push(rowObj);
 }
