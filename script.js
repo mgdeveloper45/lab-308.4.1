@@ -11,8 +11,10 @@ for(let i = 1; i < row.length; i++) {
     for(let j = 0; j < headerRow.length; j++) {
         rowObj[headerRow[j]] = cell[j]
     }
-    console.log(rowObj)
+    // console.log(rowObj)
+    data.push(rowObj);
 }
+console.log(data)
 // let data = "";
 // let row = [];
 
